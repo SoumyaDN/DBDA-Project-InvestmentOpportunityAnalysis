@@ -19,3 +19,16 @@ The objectives of the project are as -
 	To calculate Correlation of stocks based on returns
 	To Estimate Portfolio returns and risk
 	To Reduce Risk by Diversification
+
+
+Version uploaded on 13.08.2024. Order of files 
+
+daily_data.sh : api call for 100 stocks from fmp api
+hive_daily_upload_final.ipnb  : uploading the json files into hive
+hive_daily_upload_final.py : python version of above
+investment_analysis_final.ipynb : handles analysis of 100 stocks extracted from hive database
+investment_analysis_final.py  : the python code for the above file
+copycsv_final.sh :  copying the csv to grafana folder for visualization
+investment_analysis_airflow_final.py  : airflow dag for scheduling the above codes to run daily
+grafana_snapshot_link_investment_analysis_dashboard.txt : snapshot link of grafana dashboard
+Investment_Analysis_Demo-1723560115987.json : grafana dashboard export file
